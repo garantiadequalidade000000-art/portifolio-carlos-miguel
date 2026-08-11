@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Jonathas Guilherme de Paula com projetos, certificados e experiência em QA Automation, testes de software e desenvolvimento.">
+  <meta name="author" content="Jonathas Guilherme de Paula">
+  <meta name="theme-color" content="#0b5ed7">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Portfólio | Jonathas Guilherme de Paula">
+  <meta property="og:description" content="Portfólio profissional de Jonathas Guilherme de Paula com certificados, projetos e experiência em QA, testes de software e desenvolvimento.">
+  <link rel="icon" href="https://jonathasanalista.github.io/portfolio-jonathas/assets/icons/favicon.svg" type="image/svg+xml">
+  <title>Portfólio | Jonathas Guilherme de Paula (cópia editável)</title>
+
+  <style>
+    :root {
+      --blue-900: #0b2346; --blue-700: #0b5ed7; --blue-600: #146cdb; --blue-100: #eaf2ff;
+      --ink: #172033; --muted: #5b6577; --line: #dce3ed; --surface: #fff; --soft: #f5f8fc;
+      --radius: 14px; --shadow: 0 12px 30px rgba(13, 44, 84, .08); --max-width: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--surface); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; overflow-x: hidden; overflow-wrap: anywhere; }
+    a { color: inherit; }
+    button { font: inherit; }
+    .container { width: min(calc(100% - 40px), var(--max-width)); margin-inline: auto; }
+    .skip-link { position: fixed; z-index: 20; top: 10px; left: 10px; padding: 10px 14px; background: #fff; color: var(--blue-900); border-radius: 8px; transform: translateY(-150%); }
+    .skip-link:focus { transform: translateY(0); }
+    :focus-visible { outline: 3px solid #ffbf47; outline-offset: 3px; }
+    .hero { display: flex; min-height: 680px; align-items: center; color: #fff; background: linear-gradient(120deg, #06172e 0%, #09284e 62%, #0b3768 100%); }
+    .hero-content { display: grid; grid-template-columns: minmax(320px, 380px) minmax(0, 1fr); align-items: center; gap: clamp(48px, 7vw, 88px); padding-block: 72px; }
+    .profile-photo-frame { width: min(100%, 380px); aspect-ratio: 4 / 5; padding: 5px; border: 1px solid rgba(191, 219, 255, .35); border-radius: 18px; background: rgba(255,255,255,.06); box-shadow: 0 22px 54px rgba(0, 8, 24, .3); }
+    .profile-photo { display: block; width: 100%; height: 100%; border-radius: 13px; object-fit: cover; object-position: center 42%; }
+    .hero-copy { min-width: 0; }
+    .eyebrow { margin: 0 0 10px; color: var(--blue-700); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .hero .eyebrow { margin-bottom: 14px; color: #9bc4ff; font-size: .9rem; letter-spacing: .15em; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: none; margin-bottom: 16px; font-size: clamp(2.65rem, 3.3vw, 3rem); line-height: 1.06; letter-spacing: -.04em; white-space: nowrap; }
+    .professional-title { margin-bottom: 9px; color: #d3e6ff; font-size: clamp(1.2rem, 2vw, 1.42rem); font-weight: 750; line-height: 1.4; }
+    .location { display: flex; align-items: center; gap: 9px; margin-bottom: 0; color: #afc3dc; font-size: 1rem; font-weight: 650; }
+    .location::before { width: 7px; height: 7px; border: 2px solid #7fb3f5; border-radius: 50%; content: ""; }
+    .intro { max-width: 720px; margin: 28px 0 26px; padding-left: 19px; border-left: 2px solid rgba(126, 181, 247, .7); color: #dce6f2; font-size: 1.1rem; line-height: 1.75; }
+    .expertise { margin-bottom: 32px; padding-top: 21px; border-top: 1px solid rgba(181, 207, 238, .17); }
+    .expertise-title { margin-bottom: 13px; color: #f0f6ff; font-size: .92rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .expertise-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+    .expertise-list li { padding: 8px 12px; border: 1px solid rgba(174, 205, 241, .28); border-radius: 7px; background: rgba(150, 190, 235, .09); color: #d5e3f5; font-size: .92rem; font-weight: 700; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .button { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; padding: 10px 18px; border: 1px solid transparent; border-radius: 9px; font-weight: 750; text-decoration: none; cursor: pointer; transition: transform .18s ease, background .18s ease, border-color .18s ease; }
+    .hero-actions .button { min-height: 49px; padding: 11px 20px; font-size: .98rem; }
+    .button:hover { transform: translateY(-1px); }
+    .button-primary { background: var(--blue-700); color: #fff; }
+    .button-primary:hover { background: var(--blue-600); }
+    .button-secondary { border-color: rgba(255,255,255,.38); background: rgba(255,255,255,.08); color: #fff; }
+    .hero .button-primary { background: #1670e8; box-shadow: 0 8px 20px rgba(0, 82, 190, .22); }
+    .hero .button-primary:hover { background: #237bec; }
+    .hero .button-secondary { border-color: rgba(196, 218, 244, .38); background: rgba(255,255,255,.07); color: #f4f8fd; }
+    .hero .button-secondary:hover { border-color: rgba(215, 232, 252, .62); background: rgba(255,255,255,.11); }
+    .section { padding-block: 70px; }
+    .certificates-section { background: var(--soft); }
+    .section-heading { max-width: 790px; margin-bottom: 28px; }
+    h2 { margin-bottom: 10px; font-size: clamp(1.8rem, 3.5vw, 2.65rem); line-height: 1.18; letter-spacing: -.025em; }
+    .section-heading > p:last-child { margin-bottom: 0; color: var(--muted); }
+    .certificate-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+    .certificate-card { display: flex; min-width: 0; flex-direction: column; overflow: hidden; padding: 0 22px 22px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; box-shadow: 0 5px 16px rgba(22, 43, 75, .045); transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+    .certificate-card:hover { transform: translateY(-3px); border-color: #bdcadd; box-shadow: 0 9px 22px rgba(22, 43, 75, .075); }
+    .certificate-thumbnail { display: grid; width: calc(100% + 44px); aspect-ratio: 1 / 1.414; place-items: center; margin: 0 -22px 18px; border-bottom: 1px solid var(--line); background: #fff; overflow: hidden; }
+    .certificate-thumbnail-pdf { aspect-ratio: 4 / 3; background: #e9eef4; }
+    .thumbnail-link { display: grid; width: 100%; height: 100%; place-items: center; padding: 8px; color: #627086; text-decoration: none; overflow: hidden; }
+    .certificate-thumbnail-pdf .thumbnail-link { padding: 4px; }
+    .thumbnail-link img, .thumbnail-link object { display: block; width: 100%; height: 100%; border: 0; object-fit: contain; transition: transform .2s ease; pointer-events: none; }
+    .thumbnail-link:hover img, .thumbnail-link:hover object { transform: scale(1.012); }
+    .thumbnail-link:focus-visible { outline-offset: -4px; }
+    .certificate-thumbnail-placeholder { gap: 7px; align-content: center; color: #627086; font-size: .84rem; font-weight: 700; }
+    .certificate-thumbnail-placeholder svg { width: 38px; height: 38px; fill: none; stroke: #52739a; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+    .card-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 13px; }
+    .category-badge, .featured-badge { padding: 4px 9px; border-radius: 999px; background: var(--blue-100); color: #164f9f; font-size: .76rem; font-weight: 800; }
+    .featured-badge { background: #fff0c2; color: #704c00; }
+    .card-title { margin-bottom: 7px; font-size: 1.18rem; line-height: 1.35; }
+    .institution { color: var(--muted); font-weight: 650; }
+    .card-details { display: flex; flex-wrap: wrap; gap: 14px 25px; margin: 7px 0 16px; }
+    .card-details dt { color: var(--muted); font-size: .75rem; font-weight: 750; text-transform: uppercase; }
+    .card-details dd { margin: 0; font-weight: 650; }
+    .card-description { color: var(--muted); }
+    .technology-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 20px; padding: 0; list-style: none; }
+    .technology-list li { padding: 3px 8px; border: 1px solid var(--line); border-radius: 6px; color: #435069; font-size: .78rem; }
+    .card-action { width: 100%; margin-top: auto; }
+    .button-disabled { border-color: #d2d8e0; background: #e9edf2; color: #697386; cursor: not-allowed; }
+    .button-disabled:hover { transform: none; }
+    .projects-section { background: #fff; }
+    .projects-heading, .certificates-section .section-heading { position: relative; max-width: 980px; margin-bottom: 40px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+    .projects-heading::after, .certificates-section .section-heading::after { position: absolute; bottom: -1px; left: 0; width: 76px; height: 3px; border-radius: 3px; background: var(--blue-700); content: ""; }
+    .projects-heading .eyebrow, .certificates-section .section-heading .eyebrow { margin-bottom: 13px; font-size: .9rem; letter-spacing: .13em; }
+    .projects-heading h2, .certificates-section .section-heading h2 { max-width: 900px; margin-bottom: 15px; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.08; letter-spacing: -.04em; }
+    .projects-heading > p:last-child, .certificates-section .section-heading > p:last-child { max-width: 850px; font-size: 1.08rem; line-height: 1.7; }
+    .projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
+    .project-card { display: flex; min-width: 0; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: 0 8px 24px rgba(22, 43, 75, .06); transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+    .project-card:hover { transform: translateY(-3px); border-color: #b8c7da; box-shadow: 0 12px 28px rgba(22, 43, 75, .09); }
+    .project-preview { display: grid; aspect-ratio: 4 / 3; place-items: center; overflow: hidden; padding: 12px; border-bottom: 1px solid var(--line); background: #edf7f3; }
+    .project-preview-dark { background: #090d18; }
+    .project-preview img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .25s ease; }
+    .project-card:hover .project-preview img { transform: scale(1.012); }
+    .project-content { display: flex; flex: 1; flex-direction: column; padding: 26px; }
+    .project-heading { margin-bottom: 13px; }
+    .project-heading h3 { margin-bottom: 0; color: var(--blue-900); font-size: 1.45rem; line-height: 1.25; }
+    .project-type { margin-bottom: 5px; color: var(--blue-700); font-size: .75rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+    .project-description { margin-bottom: 18px; color: var(--muted); }
+    .project-technologies { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 21px; padding: 0; list-style: none; }
+    .project-technologies li { padding: 4px 9px; border: 1px solid #cdd8e6; border-radius: 6px; background: #f7f9fc; color: #3d4d64; font-size: .78rem; font-weight: 700; }
+    .quality-summary { margin-bottom: 24px; padding: 16px 18px; border-left: 3px solid #7aa8e8; background: #f6f9fd; }
+    .quality-summary > p { margin-bottom: 7px; color: var(--blue-900); font-size: .82rem; font-weight: 800; text-transform: uppercase; }
+    .quality-summary ul { margin: 0; padding-left: 18px; color: #4f5d72; font-size: .88rem; }
+    .quality-summary li + li { margin-top: 3px; }
+    .project-actions { margin-top: auto; }
+    .project-actions .button { width: 100%; }
+    .button-muted { border-color: #d3dbe6; background: #edf1f6; color: #59677b; cursor: default; }
+    .button-muted:hover { transform: none; }
+    .footer { padding-block: 30px 20px; background: #071a35; color: #d8e1ed; }
+    .footer-content { display: flex; justify-content: space-between; gap: 24px; }
+    .footer-content p { margin: 4px 0 0; color: #9fb0c5; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-weight: 700; }
+    .footer-note { display: flex; justify-content: space-between; gap: 24px; margin-top: 18px; padding-top: 14px; border-top: 1px solid #29405e; color: #9fb0c5; font-size: .82rem; }
+    .footer-note p { margin-bottom: 0; }
+    @media (max-width: 1150px) { .hero-content { grid-template-columns: minmax(260px, 310px) minmax(0, 1fr); gap: 40px; } h1 { font-size: clamp(2.3rem, 3.55vw, 2.55rem); } .profile-photo-frame { width: min(100%, 310px); } }
+    @media (max-width: 980px) { .hero { min-height: 640px; } .hero-content { padding-block: 60px; } .professional-title { font-size: 1.18rem; } .intro { font-size: 1.03rem; } .certificate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 900px) { .hero { min-height: 0; } .hero-content { grid-template-columns: 1fr; gap: 38px; padding-block: 48px 58px; } .profile-photo-frame { width: min(100%, 350px); margin-inline: auto; } .hero-copy { width: 100%; } h1 { max-width: 100%; font-size: clamp(2.35rem, 7vw, 2.8rem); white-space: normal; text-wrap: balance; } .professional-title { font-size: 1.2rem; } .intro { font-size: 1.05rem; } .projects-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 580px) { .container { width: min(calc(100% - 28px), var(--max-width)); } .section { padding-block: 48px; } .hero-content { padding-block: 32px 50px; } .profile-photo-frame { width: min(100%, 330px); } .hero-actions { flex-direction: column; } .hero-actions .button { width: 100%; } .certificate-grid { grid-template-columns: 1fr; } .certificate-card .button { width: 100%; } .projects-heading, .certificates-section .section-heading { margin-bottom: 30px; padding-bottom: 22px; } .projects-heading h2, .certificates-section .section-heading h2 { font-size: clamp(2.15rem, 11vw, 3rem); } .projects-heading > p:last-child, .certificates-section .section-heading > p:last-child { font-size: 1rem; } .project-preview { padding: 7px; } .project-content { padding: 21px; } .footer-content, .footer-note { flex-direction: column; gap: 12px; } .footer-links { flex-wrap: wrap; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="hero">
+    <div class="hero-content container" id="topo">
+      <div class="profile-photo-frame">
+        <img class="profile-photo" src="https://jonathasanalista.github.io/portfolio-jonathas/assets/images/jonathasPerfil.png" alt="Foto de perfil de Jonathas Guilherme de Paula" width="1254" height="1254">
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Portfólio profissional</p>
+        <h1>Jonathas Guilherme de Paula</h1>
+        <p class="professional-title">QA Automation Júnior <span aria-hidden="true">|</span> Analista de Testes Júnior</p>
+        <p class="location">Ouro Fino — MG</p>
+        <p class="intro">Profissional de tecnologia com formação em Análise e Desenvolvimento de Sistemas, experiência em suporte técnico e redes e formação voltada para Quality Assurance e automação de testes. Esta página reúne minhas certificações, formações complementares e conhecimentos aplicados à qualidade de software.</p>
+        <div class="expertise" aria-labelledby="expertise-title">
+          <p id="expertise-title" class="expertise-title">Áreas de atuação</p>
+          <ul class="expertise-list">
+            <li>Quality Assurance</li>
+            <li>Automação de Testes</li>
+            <li>Testes de API</li>
+            <li>Testes Web</li>
+            <li>Testes Mobile</li>
+            <li>Melhoria Contínua</li>
+          </ul>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#certificados">Ver certificados</a>
+          <a class="button button-secondary" href="#projetos">Ver projetos</a>
+          <a class="button button-secondary" href="https://linkedin.com/in/jonathasguilhermeti" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Jonathas (abre em nova aba)">LinkedIn</a>
+          <a class="button button-secondary" href="https://github.com/JonathasAnalista" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Jonathas (abre em nova aba)">GitHub</a>
+          <a class="button button-secondary" href="mailto:jonathasguilhermeti@gmail.com?subject=Contato%20pelo%20portfólio%20profissional" aria-label="Enviar e-mail para Jonathas Guilherme de Paula">Enviar e-mail</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="section certificates-section" id="certificados" aria-labelledby="titulo-certificados">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Formação profissional</p>
+          <h2 id="titulo-certificados">Certificados e formações</h2>
+          <p>Formações relevantes para minha trajetória em tecnologia, Quality Assurance, automação de testes e desenvolvimento de software.</p>
+        </div>
+        <div id="certificate-list" class="certificate-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projetos" aria-labelledby="titulo-projetos">
+      <div class="container">
+        <div class="section-heading projects-heading">
+          <p class="eyebrow">Portfólio técnico</p>
+          <h2 id="titulo-projetos">Projetos reais, soluções completas</h2>
+          <p>Aplicações full stack desenvolvidas para resolver necessidades reais, combinando arquitetura, experiência do usuário, integração de sistemas e práticas de qualidade de software.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-preview">
+              <img src="https://jonathasanalista.github.io/portfolio-jonathas/assets/projects/aprovei-detran.png" alt="Tela do painel de estudos do projeto Aprovei Detran" width="1162" height="892" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-heading">
+                <p class="project-type">Plataforma educacional</p>
+                <h3>Aprovei Detran</h3>
+              </div>
+              <p class="project-description">Plataforma full stack voltada à preparação para a prova teórica de habilitação, com simulados por categoria, aulas, acompanhamento de desempenho e recursos para gestão da jornada de estudos.</p>
+              <ul class="project-technologies" aria-label="Tecnologias utilizadas no projeto Aprovei Detran">
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Firebase</li>
+                <li>API REST</li>
+              </ul>
+              <div class="quality-summary">
+                <p>Qualidade aplicada</p>
+                <ul>
+                  <li>Autenticação e proteção de rotas</li>
+                  <li>Tratamento centralizado de erros</li>
+                  <li>Interface responsiva e organizada</li>
+                </ul>
+              </div>
+              <div class="project-actions">
+                <span class="button button-muted" aria-label="O repositório do projeto Aprovei Detran é privado">Repositório privado</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview project-preview-dark">
+              <img src="https://jonathasanalista.github.io/portfolio-jonathas/assets/projects/audio-converter-pro.png" alt="Tela principal do projeto Áudio Converter Pro" width="1088" height="903" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-heading">
+                <p class="project-type">Conversão de áudio</p>
+                <h3>Áudio Converter Pro</h3>
+              </div>
+              <p class="project-description">Aplicação full stack para conversão de arquivos de áudio, com envio em lote, configurações de saída, acompanhamento de progresso em tempo real e downloads individuais ou compactados.</p>
+              <ul class="project-technologies" aria-label="Tecnologias utilizadas no projeto Áudio Converter Pro">
+                <li>React</li>
+                <li>Vite</li>
+                <li>Node.js</li>
+                <li>FFmpeg</li>
+                <li>SQLite</li>
+              </ul>
+              <div class="quality-summary">
+                <p>Qualidade aplicada</p>
+                <ul>
+                  <li>Validação de arquivos e configurações</li>
+                  <li>Estados e progresso em tempo real</li>
+                  <li>Tratamento de erros e responsividade</li>
+                </ul>
+              </div>
+              <div class="project-actions">
+                <a class="button button-primary" href="https://github.com/JonathasAnalista/audio_Converter" target="_blank" rel="noopener noreferrer" aria-label="Ver código do projeto Áudio Converter Pro no GitHub (abre em nova aba)">Ver código no GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div><strong>Jonathas Guilherme de Paula</strong><p>QA Automation Júnior | Analista de Testes Júnior</p></div>
+      <div class="footer-links"><a href="https://linkedin.com/in/jonathasguilhermeti" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/JonathasAnalista" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    </div>
+    <div class="container footer-note">
+      <p>Os certificados são disponibilizados exclusivamente para consulta profissional.</p>
+      <p>© <span id="current-year"></span> Jonathas Guilherme de Paula.</p>
+    </div>
+  </footer>
+
+  <script>
+    /*
+      EDITE A LISTA ABAIXO PARA ALTERAR OS CERTIFICADOS EXIBIDOS.
+      Formato esperado para cada certificado:
+      {
+        id: 1,
+        titulo: "",
+        instituicao: "",
+        categoria: "",
+        cargaHoraria: "",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "",
+        thumbnailUrl: "",
+        ordem: "",
+        destaque: false
+      }
+    */
+    const certificates = [
+      {
+        id: 1,
+        titulo: "Diploma — Análise e Desenvolvimento de Sistemas",
+        instituicao: "",
+        categoria: "Formação Acadêmica",
+        cargaHoraria: "",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://jonathasanalista.github.io/portfolio-jonathas/assets/certificados/diploma_digital.pdf",
+        thumbnailUrl: "",
+        ordem: 1,
+        destaque: false
+      },
+      {
+        id: 2,
+        titulo: "Formação Analista de Dados",
+        instituicao: "EBAC",
+        categoria: "Dados",
+        cargaHoraria: "",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://jonathasanalista.github.io/portfolio-jonathas/assets/certificados/Forma%C3%A7%C3%A3o%20-%20Analista%20de%20Dados%20-%20EBAC.pdf",
+        thumbnailUrl: "",
+        destaque: false
+      },
+      {
+        id: 3,
+        titulo: "Formação Full Stack",
+        instituicao: "DevClub",
+        categoria: "Desenvolvimento",
+        cargaHoraria: "140h",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://jonathasanalista.github.io/portfolio-jonathas/assets/certificados/Forma%C3%A7%C3%A3o%20Full%20Stack%20%E2%80%94%20DevClub%20_%20140h.pdf",
+        thumbnailUrl: "",
+        destaque: false
+      },
+      {
+        id: 4,
+        titulo: "Guardião da Qualidade",
+        instituicao: "Lumestack",
+        categoria: "Quality Assurance",
+        cargaHoraria: "",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://jonathasanalista.github.io/portfolio-jonathas/assets/certificados/Lumestack%20-%20Guardi%C3%A3o%20da%20qualidade.pdf",
+        thumbnailUrl: "",
+        destaque: false
+      },
+      {
+        id: 5,
+        titulo: "Guardião da Qualidade",
+        instituicao: "Lumestack",
+        categoria: "Quality Assurance",
+        cargaHoraria: "",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://jonathasanalista.github.io/portfolio-jonathas/assets/certificados/Lumestack%20-%20Guardi%C3%A3o%20da%20qualidade%20(1).pdf",
+        thumbnailUrl: "",
+        destaque: false
+      },
+      {
+        id: 6,
+        titulo: "Guardião da Qualidade",
+        instituicao: "Lumestack",
+        categoria: "Quality Assurance",
+        cargaHoraria: "",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://jonathasanalista.github.io/portfolio-jonathas/assets/certificados/Lumestack%20-%20Guardi%C3%A3o%20da%20qualidade%20(2).pdf",
+        thumbnailUrl: "",
+        destaque: false
+      },
+      {
+        id: 7,
+        titulo: "Mentoria 2.0 em Teste de Software",
+        instituicao: "Julio de Lima",
+        categoria: "Quality Assurance",
+        cargaHoraria: "",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://jonathasanalista.github.io/portfolio-jonathas/assets/certificados/Mentoria%20Julio%20de%20Lima%20-%202.0%20em%20teste%20de%20software.pdf",
+        thumbnailUrl: "",
+        ordem: 2,
+        destaque: false
+      }
+    ];
+  </script>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const data = Array.isArray(window.certificates) ? window.certificates :
+        (typeof certificates !== "undefined" && Array.isArray(certificates) ? certificates : []);
+      const elements = {
+        certificateList: document.querySelector("#certificate-list"),
+        year: document.querySelector("#current-year")
+      };
+
+      function isValidCertificate(item) {
+        return item && typeof item === "object" && String(item.titulo || "").trim();
+      }
+
+      function createTextElement(tag, className, text) {
+        const element = document.createElement(tag);
+        if (className) element.className = className;
+        element.textContent = text;
+        return element;
+      }
+
+      function createCertificateCard(certificate) {
+        const article = document.createElement("article");
+        article.className = "certificate-card";
+
+        const thumbnail = document.createElement("div");
+        thumbnail.className = "certificate-thumbnail";
+        const certificateUrl = String(certificate.certificadoUrl || "").trim();
+        const thumbnailUrl = String(certificate.thumbnailUrl || "").trim();
+        const imageUrl = thumbnailUrl || (isImageFile(certificateUrl) ? certificateUrl : "");
+        const previewContent = certificateUrl ? document.createElement("a") : document.createElement("div");
+        previewContent.className = "thumbnail-link";
+        if (certificateUrl) {
+          previewContent.href = certificateUrl;
+          previewContent.target = "_blank";
+          previewContent.rel = "noopener noreferrer";
+          previewContent.setAttribute("aria-label", `Abrir certificado ${certificate.titulo}`);
+        }
+        if (imageUrl && isImageFile(imageUrl)) {
+          const image = document.createElement("img");
+          image.src = imageUrl;
+          image.alt = `Pré-visualização do certificado ${certificate.titulo}`;
+          image.loading = "lazy";
+          image.decoding = "async";
+          previewContent.append(image);
+        } else if (isPdfFile(certificateUrl)) {
+          thumbnail.classList.add("certificate-thumbnail-pdf");
+          const preview = document.createElement("object");
+          preview.type = "application/pdf";
+          preview.title = `Pré-visualização do certificado ${certificate.titulo}`;
+          preview.setAttribute("aria-label", `Pré-visualização do certificado ${certificate.titulo}`);
+          preview.dataset.previewUrl = `${certificateUrl}#page=1&view=Fit&toolbar=0&navpanes=0`;
+          preview.innerHTML = "<span>Certificado em PDF</span>";
+          previewContent.append(preview);
+        } else {
+          previewContent.classList.add("certificate-thumbnail-placeholder");
+          const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+          icon.setAttribute("viewBox", "0 0 48 48");
+          icon.setAttribute("aria-hidden", "true");
+          icon.innerHTML = '<path d="M15 5h14l8 8v30H15z"/><path d="M29 5v9h8M20 25h12M20 31h9"/>';
+          previewContent.append(icon, createTextElement("span", "", "Pré-visualização indisponível"));
+        }
+        thumbnail.append(previewContent);
+
+        const top = document.createElement("div");
+        top.className = "card-top";
+        if (certificate.categoria) top.append(createTextElement("span", "category-badge", certificate.categoria));
+        if (certificate.destaque === true) top.append(createTextElement("span", "featured-badge", "Destaque"));
+        article.append(thumbnail);
+        if (top.children.length) article.append(top);
+        article.append(createTextElement("h3", "card-title", certificate.titulo));
+        if (certificate.instituicao) article.append(createTextElement("p", "institution", certificate.instituicao));
+
+        const details = document.createElement("dl");
+        details.className = "card-details";
+        [["Carga horária", certificate.cargaHoraria], ["Conclusão", certificate.dataConclusao]].forEach(([label, value]) => {
+          if (!value) return;
+          const group = document.createElement("div");
+          group.append(createTextElement("dt", "", label), createTextElement("dd", "", value));
+          details.append(group);
+        });
+        if (details.children.length) article.append(details);
+        if (certificate.descricao) article.append(createTextElement("p", "card-description", certificate.descricao));
+
+        if (Array.isArray(certificate.tecnologias) && certificate.tecnologias.filter(Boolean).length) {
+          const tags = document.createElement("ul");
+          tags.className = "technology-list";
+          tags.setAttribute("aria-label", "Tecnologias relacionadas");
+          certificate.tecnologias.filter(Boolean).forEach((technology) => {
+            const item = document.createElement("li");
+            item.textContent = technology;
+            tags.append(item);
+          });
+          article.append(tags);
+        }
+
+        if (certificateUrl) {
+          const link = createTextElement("a", "button button-primary card-action", "Visualizar certificado");
+          link.href = certificateUrl;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.setAttribute("aria-label", `Visualizar certificado: ${certificate.titulo} (abre em nova aba)`);
+          article.append(link);
+        } else {
+          const button = createTextElement("button", "button button-disabled card-action", "Certificado indisponível");
+          button.type = "button";
+          button.disabled = true;
+          article.append(button);
+        }
+        return article;
+      }
+
+      function getFileExtension(url) {
+        const cleanUrl = String(url || "").split(/[?#]/)[0];
+        const match = cleanUrl.match(/\.([a-z0-9]+)$/i);
+        return match ? match[1].toLocaleLowerCase("pt-BR") : "";
+      }
+
+      function isImageFile(url) {
+        return ["png", "jpg", "jpeg", "webp"].includes(getFileExtension(url));
+      }
+
+      function isPdfFile(url) {
+        return getFileExtension(url) === "pdf";
+      }
+
+      function renderCards(container, items) {
+        const fragment = document.createDocumentFragment();
+        items.forEach((item) => fragment.append(createCertificateCard(item)));
+        container.replaceChildren(fragment);
+      }
+
+      function getCompletionTimestamp(value) {
+        const text = String(value || "").trim();
+        const brazilianDate = text.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+        if (brazilianDate) {
+          return new Date(Number(brazilianDate[3]), Number(brazilianDate[2]) - 1, Number(brazilianDate[1])).getTime();
+        }
+        const timestamp = Date.parse(text);
+        if (!Number.isNaN(timestamp)) return timestamp;
+        const year = text.match(/\b(?:19|20)\d{2}\b/);
+        return year ? new Date(Number(year[0]), 0, 1).getTime() : 0;
+      }
+
+      function sortCertificates(items) {
+        return [...items].sort((a, b) => {
+          const orderA = Number.isFinite(Number(a.ordem)) && String(a.ordem).trim() ? Number(a.ordem) : Number.MAX_SAFE_INTEGER;
+          const orderB = Number.isFinite(Number(b.ordem)) && String(b.ordem).trim() ? Number(b.ordem) : Number.MAX_SAFE_INTEGER;
+          const explicitOrderDifference = orderA - orderB;
+          if (explicitOrderDifference) return explicitOrderDifference;
+          const featuredDifference = Number(b.destaque === true) - Number(a.destaque === true);
+          if (featuredDifference) return featuredDifference;
+          const dateDifference = getCompletionTimestamp(b.dataConclusao) - getCompletionTimestamp(a.dataConclusao);
+          if (dateDifference) return dateDifference;
+          return String(a.titulo).localeCompare(String(b.titulo), "pt-BR", { sensitivity: "base" });
+        });
+      }
+
+      function renderCertificates() {
+        const validCertificates = sortCertificates(data.filter(isValidCertificate));
+        renderCards(elements.certificateList, validCertificates);
+        loadPdfPreviews();
+      }
+
+      function loadPdfPreviews() {
+        const previews = document.querySelectorAll("object[data-preview-url]");
+        if (!("IntersectionObserver" in window)) {
+          previews.forEach((preview) => { preview.data = preview.dataset.previewUrl; });
+          return;
+        }
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const preview = entry.target;
+            preview.data = preview.dataset.previewUrl;
+            observer.unobserve(preview);
+          });
+        }, { rootMargin: "200px 0px" });
+        previews.forEach((preview) => observer.observe(preview));
+      }
+
+      renderCertificates();
+      elements.year.textContent = new Date().getFullYear();
+    }());
+  </script>
+</body>
+</html>
