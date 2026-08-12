@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Fundo grafite, cantos levemente arredondados, no espírito minimalista do portfólio -->
+  <rect x="0" y="0" width="64" height="64" rx="14" fill="#16181d"/>
+
+  <!-- Fio de acento no topo, mesmo detalhe usado no hero do site -->
+  <rect x="0" y="0" width="64" height="4" rx="2" fill="#1f6f5c"/>
+
+  <!-- Iniciais "CM" em fonte geométrica, estilo Manrope/IBM Plex Mono -->
+  <text
+    x="32"
+    y="40"
+    text-anchor="middle"
+    font-family="Manrope, 'IBM Plex Mono', ui-sans-serif, system-ui, sans-serif"
+    font-weight="800"
+    font-size="26"
+    letter-spacing="-1"
+    fill="#f4f6f7"
+  >CM</text>
+
+  <!-- Pequeno ponto de acento, remetendo a "aprovado / verificado" (QA) -->
+  <circle cx="47" cy="46" r="3" fill="#1f6f5c"/>
+</svg>
