@@ -265,24 +265,6 @@
   </footer>
 
   <script>
-    /*
-      EDITE A LISTA ABAIXO PARA ALTERAR OS CERTIFICADOS EXIBIDOS.
-      Formato esperado para cada certificado:
-      {
-        id: 1,
-        titulo: "",
-        instituicao: "",
-        categoria: "",
-        cargaHoraria: "",
-        descricao: "",
-        tecnologias: [],
-        dataConclusao: "",
-        certificadoUrl: "",
-        thumbnailUrl: "",
-        ordem: "",
-        destaque: false
-      }
-    */
     const certificates = [
       {
         id: 1,
@@ -324,59 +306,134 @@
         thumbnailUrl: "",
         destaque: false
       },
-      /*{
+      {
         id: 4,
-        titulo: "Guardião da Qualidade",
-        instituicao: "Lumestack",
+        titulo: "Como utilizar o Gherkin da forma correta",
+        instituicao: "QAZANDO",
         categoria: "Quality Assurance",
-        cargaHoraria: "",
+        cargaHoraria: "5h",
         descricao: "",
         tecnologias: [],
         dataConclusao: "",
-        certificadoUrl: "https://jonathasanalista.github.io/portfolio-jonathas/assets/certificados/Lumestack%20-%20Guardi%C3%A3o%20da%20qualidade.pdf",
+        certificadoUrl: "https://garantiadequalidade000000-art.github.io/portifolio-carlos-miguel/assets/certificados/Cert.%20Como%20utilizar%20o%20Gherkin%20da%20forma%20correta.pdf",
         thumbnailUrl: "",
         destaque: false
       },
       {
         id: 5,
-        titulo: "Guardião da Qualidade",
-        instituicao: "Lumestack",
+        titulo: "Conceitos de Testes de Software",
+        instituicao: "QAZANDO",
         categoria: "Quality Assurance",
-        cargaHoraria: "",
+        cargaHoraria: "10h",
         descricao: "",
         tecnologias: [],
         dataConclusao: "",
-        certificadoUrl: "https://jonathasanalista.github.io/portfolio-jonathas/assets/certificados/Lumestack%20-%20Guardi%C3%A3o%20da%20qualidade%20(1).pdf",
+        certificadoUrl: "https://garantiadequalidade000000-art.github.io/portifolio-carlos-miguel/assets/certificados/Cert.%20Conceitos%20de%20Testes%20de%20Software.pdf",
         thumbnailUrl: "",
         destaque: false
       },
       {
         id: 6,
-        titulo: "Guardião da Qualidade",
-        instituicao: "Lumestack",
+        titulo: "Ferramentas de gestão de testes",
+        instituicao: "QAZANDO",
         categoria: "Quality Assurance",
-        cargaHoraria: "",
+        cargaHoraria: "6h",
         descricao: "",
         tecnologias: [],
         dataConclusao: "",
-        certificadoUrl: "https://jonathasanalista.github.io/portfolio-jonathas/assets/certificados/Lumestack%20-%20Guardi%C3%A3o%20da%20qualidade%20(2).pdf",
+        certificadoUrl: "https://garantiadequalidade000000-art.github.io/portifolio-carlos-miguel/assets/certificados/Cert.%20Ferramentas%20de%20gest%C3%A3o%20de%20testes.pdf",
         thumbnailUrl: "",
         destaque: false
       },
       {
         id: 7,
-        titulo: "Mentoria 2.0 em Teste de Software",
-        instituicao: "Julio de Lima",
+        titulo: "Introdução ao DevOps e automação de CI_CD (integração Contínua e Entrega Contínua)",
+        instituicao: "Cursa",
+        categoria: "DevOps",
+        cargaHoraria: "4h",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://garantiadequalidade000000-art.github.io/portifolio-carlos-miguel/assets/certificados/Cert.%20Introdu%C3%A7%C3%A3o%20ao%20DevOps%20e%20automa%C3%A7%C3%A3o%20de%20CI_CD%20(integra%C3%A7%C3%A3o%20Cont%C3%ADnua%20e%20Entrega%20Cont%C3%ADnua).pdf",
+        thumbnailUrl: "",
+        ordem: 2,
+        destaque: false
+      }
+	  {
+        id: 8,
+        titulo: "Automação de Testes WEB com Cypress, Automação de Testes de API com Cypress e Automação de testes Mobile com Maestro",
+        instituicao: "QAZANDO",
         categoria: "Quality Assurance",
+        cargaHoraria: "8h",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://garantiadequalidade000000-art.github.io/portifolio-carlos-miguel/assets/certificados/Cert.%20QA%20TURBO%20-%20Automa%C3%A7%C3%A3o%20de%20Testes%20WEB%20com%20Cypress%2C%20Automa%C3%A7%C3%A3o%20de%20Testes%20de%20API%20com%20Cypress%20e%20Automa%C3%A7%C3%A3o%20de%20testes%20Mobile%20com%20Maestro.pdf",
+        thumbnailUrl: "",
+        ordem: "",
+        destaque: false
+      }
+	  {
+        id: 9,
+        titulo: "QA TURBO - Automação de testes Mobile com Maestro Framework",
+        instituicao: "QAZANDO",
+        categoria: "Quality Assurance",
+        cargaHoraria: "2h",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://garantiadequalidade000000-art.github.io/portifolio-carlos-miguel/assets/certificados/Cert.%20QA%20TURBO%20-%20Automa%C3%A7%C3%A3o%20de%20testes%20Mobile%20com%20Maestro%20Framework.pdf",
+        thumbnailUrl: "",
+        ordem: "",
+        destaque: false
+      }
+	  {
+        id: 10,
+        titulo: "QA TURBO - Inteligência Artificial para QA, Automação de Testes WEB, Automação de Testes de API e Automação de testes Mobile",
+        instituicao: "QAZANDO",
+        categoria: "Quality Assurance",
+        cargaHoraria: "8h",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://garantiadequalidade000000-art.github.io/portifolio-carlos-miguel/assets/certificados/Cert.%20QA%20TURBO%20-%20Intelig%C3%AAncia%20Artificial%20para%20QA%2C%20Automa%C3%A7%C3%A3o%20de%20Testes%20WEB%2C%20Automa%C3%A7%C3%A3o%20de%20Testes%20de%20API%20e%20Automa%C3%A7%C3%A3o%20de%20testes%20Mobile.pdf",
+        thumbnailUrl: "",
+        ordem: "",
+        destaque: false
+      }
+	  {
+        id: 11,
+        titulo: "Testes de Software para Iniciantes",
+        instituicao: "Cursa",
+        categoria: "Testes de software",
+        cargaHoraria: "3h",
+        descricao: "",
+        tecnologias: [],
+        dataConclusao: "",
+        certificadoUrl: "https://garantiadequalidade000000-art.github.io/portifolio-carlos-miguel/assets/certificados/Cert.%20Testes%20de%20Software%20para%20Iniciantes.pdf",
+        thumbnailUrl: "",
+        ordem: "",
+        destaque: false
+      }
+    /*
+      EDITE A LISTA ABAIXO PARA ALTERAR OS CERTIFICADOS EXIBIDOS.
+      Formato esperado para cada certificado:
+      {
+        id: 1,
+        titulo: "",
+        instituicao: "",
+        categoria: "",
         cargaHoraria: "",
         descricao: "",
         tecnologias: [],
         dataConclusao: "",
-        certificadoUrl: "https://jonathasanalista.github.io/portfolio-jonathas/assets/certificados/Mentoria%20Julio%20de%20Lima%20-%202.0%20em%20teste%20de%20software.pdf",
+        certificadoUrl: "",
         thumbnailUrl: "",
-        ordem: 2,
+        ordem: "",
         destaque: false
-      }*/
+      }
+    */
+	  /*Comentários*/
     ];
   </script>
 
